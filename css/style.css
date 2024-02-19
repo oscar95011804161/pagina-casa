@@ -7,7 +7,7 @@ body{
 .content{
    display: grid;
    flex-direction: column;
-   height: 100vh;  /*con esto modificamos la altura del todo el grid en mobile*/
+   height: 120vh;  /*con esto modificamos la altura del todo el grid en mobile*/
 }
 .Header, .Main, .Aside, .Footer {                   
    padding: 20px;
@@ -48,7 +48,7 @@ body{
       display: grid;
       grid-template-rows: 80px 1fr 1fr 80px ;
       grid-template-columns: repeat(3, 1fr);
-      height: 200vh;
+      height: 250vh;
    }
    .Header{
        grid-column: 1/ span 3;

@@ -84,7 +84,7 @@
 
 @media only screen and (max-width:600px){
 
-    .nav__responsive-ul{ display: block;}      /*Para que nos muestre el nav responsive ES OBLIGATORIO*/
+    
     
     /*Lo que le queramos cambiar*/
     .flex-container{
@@ -109,7 +109,7 @@
 
 @media only screen and (max-width:1200px){
 
-    .nav__responsive-ul{ display: block;}      /*Para que nos muestre el nav responsive ES OBLIGATORIO*/
+    
     
     /*Lo que le queramos cambiar*/
     .flex-container{ margin: -30px -20px; } /*cambiamos la anchura del contenedor para que quepa en el*/
@@ -121,7 +121,7 @@
 
 @media only screen and (max-width:600px){
 
-    .nav__responsive-ul{ display: block;}      /*Para que nos muestre el nav responsive ES OBLIGATORIO*/
+    
     
     /*Lo que le queramos cambiar*/
     .flex-container{ margin: -30px -20px; } /*cambiamos la anchura del contenedor para que quepa en el*/
@@ -131,7 +131,7 @@
 
 @media only screen and (max-width:300px){
     
-    .nav__responsive-ul{ display: block;}      /*Para que nos muestre el nav responsive ES OBLIGATORIO*/
+    
     /*Lo que le queramos cambiar*/
     .flex-container{ margin: -30px -50px ;}   /*cambiamos la anchura del contenedor para que quepa en el*/
     .form-img { min-width: 200px;  max-width: 400px;}/*Formulario de imagen */ 
