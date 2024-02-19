@@ -1,0 +1,59 @@
+@media only screen and (max-width:600px) {
+
+    /*estilos----------------------------------------------------------------------------*/
+    *{font-family: 'Times New Roman', Times, serif, cursive; font-size: 20px; text-align: justify;}
+    .h1{text-align:center; color: #181010; font-size:45px;}
+    .h2{text-align: justify; color: orange; font-size: 35px;}
+    .h3{text-align: justify; color: green; font-size: 25px; }
+    p{text-align: justify; font-size: 15px;}
+    .ColorBlanco{ color: #fff;}
+
+    .nav__ul{display: none;}/*Para desaparecer el nav normal sin responsive*/
+       
+    .nav{
+        height: 37px;
+        width: 100%;
+        background-color: aqua;
+    }	
+    .nav__responsive-ul{
+        display: block;      /*Para que nos muestre el nav responsive */
+        position: absolute;  /*hace que nuestro nav responsive tenga su espacio en el dom (mirar tematica de position absolute)*/
+        width: 100%;
+        height: 37px;
+        background-color: transparent;      
+        margin-top: 37px;
+        padding-top: 27px;
+    }
+    .nav__li-container{
+        position: relative;
+        top: -1000px;
+        height: calc(100vh - 64px); /**/
+
+        background: #222;    /*Este es el color que le queramos dar*/
+        transition: all 1s;
+        z-index: 1;
+        width: 50%; /*Este es el tamaño del contenedor*/
+        padding-top: -20px;
+    }
+    .nav__responsive-li{ /*Modificamos todas las clases de li ubicadas dentro del nav__responsive*/
+        width: 100%;  
+        padding: 9px 20px;  /*separamos todos los li */
+    }
+    .nav__responsive-li a{ /*Modificamos los a ubicados dentro de .nav__responsive-li*/
+        color: #094;
+        font-family: cursive;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    .nav__responsive-li a:hover{
+        background-color: transparent;
+        color: white;
+    }
+    .nav__responsive-ul:hover > .nav__li-container{ /*con esto movemos el responsive ul para poner el container*/
+        top: -27px;
+    }   
+}
+
+
+
+
