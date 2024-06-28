@@ -1,0 +1,12 @@
+
+.contenedor{
+    margin-bottom: 0; 
+}  
+
+footer{
+    background-color: #f8f9fa;
+    & a {
+        color: #25282b;
+        text-decoration: none;
+    }
+} 

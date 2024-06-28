@@ -1,0 +1,139 @@
+.flex-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #222;
+    margin: 50px auto;
+    padding: 20px;
+    border: 14px solid #000;
+    outline: 3px solid #094;
+}
+.form{ /*Formulario*/
+    min-width: 400px;
+    flex: 1;
+    text-align: center;
+    padding: 30px ; 
+    order: 5;
+}
+.form__input{
+    width: 100%;
+    padding: 7px;
+    margin: 6px 0px;
+    border: none;
+    border-bottom: 3px solid #1c7;
+    background-color: transparent;
+    color: #fff;
+}
+.form__input:focus{
+    background: linear-gradient(to bottom,transparent, #111);/*se usa para que coloree solo una parte de la caja por ejemplo aqui pusimos bottom*/
+    outline: none;
+    border-bottom: 3px solid #5f9;
+}
+.form textarea{
+    min-height: 140px;
+    resize: none;
+}
+.form-img { /*Formulario de imagen*/
+    flex:1;
+    display: flex;
+    padding: 10px;
+    min-width: 300px; 
+    max-width: 400px;
+    order: 2;
+} 
+.form-img div{
+    padding: 10px;
+}
+.img-container div{
+    background: #094; /*EL color del fondo del logo*/
+    border-radius: 50%;
+    text-align: center;
+    padding: 40px;
+}
+.img-container{
+    margin: auto;  
+}
+.form-img img{ /*imagen especifica*/
+    width: 80%; 
+   
+} 
+
+/*DiseÃ±o del boton*/
+.form input[type="submit"]{
+    background-color: #094;
+    border-bottom: none;
+    padding: 12px;
+}
+
+.form input[type="submit"]:hover{
+    background-color: #072;
+    border-bottom: none;
+    padding: 12px;
+}
+
+.form input[type="submit"]:focus{
+    background-color: #094;   
+}
+
+.form input[type="submit"]:active{
+    background-color: linear-gradient(to bottom, #072, #050);;  
+}
+
+.nav__responsive-ul{display: none;} /*Para ocultar el menu responsive es OBLIGATORIO*/
+
+@media only screen and (max-width:600px){
+
+    
+    
+    /*Lo que le queramos cambiar*/
+    .flex-container{
+        margin: -50px -50px;
+        
+        
+    }
+    .form textarea{
+        min-height: 140px;
+        resize: none;
+    }
+
+    .ColorBlanco{ margin-bottom: 120px;}/*llamamos a la propiedad de StyleStandard */
+
+    .form{ /*Formulario*/
+        flex: 1;
+        min-width: 100px;
+        order: 5;
+    }
+}
+
+
+@media only screen and (max-width:1200px){
+
+    
+    
+    /*Lo que le queramos cambiar*/
+    .flex-container{ margin: -30px -20px; } /*cambiamos la anchura del contenedor para que quepa en el*/
+    .ColorBlanco{ margin-bottom: 30px;}/*llamamos a la propiedad de StyleStandard */
+    .form{ min-width: 300px; } /*Formulario*/
+}
+
+
+
+@media only screen and (max-width:600px){
+
+    
+    
+    /*Lo que le queramos cambiar*/
+    .flex-container{ margin: -30px -20px; } /*cambiamos la anchura del contenedor para que quepa en el*/
+    .ColorBlanco{ margin-bottom: 60px;}/*llamamos a la propiedad de StyleStandard */
+    .form{ min-width: 300px; } /*Formulario*/
+}
+
+@media only screen and (max-width:300px){
+    
+    
+    /*Lo que le queramos cambiar*/
+    .flex-container{ margin: -30px -50px ;}   /*cambiamos la anchura del contenedor para que quepa en el*/
+    .form-img { min-width: 200px;  max-width: 400px;}/*Formulario de imagen */ 
+    .form{min-width: 100px;} /*Formulario*/
+}

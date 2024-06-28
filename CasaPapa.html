@@ -7,45 +7,53 @@
 	<meta name="keywords" content="inicio, pagina, vanegas">
 	<meta name="descriptio" content="esta es una pagina web ser usado para la familia">
 	<meta name="Copyright" content="Vanegas s.a.s.">
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/styleStandard.css">
-	<link rel="stylesheet" type="text/css" href="css/styleStandardResp.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 	<link rel="stylesheet" type="text/css" href="css/styleCasaPapa.css">
+
+	<!--Link de boostrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<!--Iconos bootstrap-->
+  	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
 	<title>Arriendo casa Papa</title>
 </head>
 
 
 <body>
 
-	<div class="content">
-		<header class="Header">
-				<nav>	
-					<ul >   																					
-					   <li class="nav__li"><a href="CasaHermanos.html">CasaHermanos</a> </li> 
-					   <li class="nav__li"><a href="CasaPapa.html">CasaPapa</a></li>
-					   <li class="nav__li"><a href="Chircal.html">Chircal</a></li>
-					   <li class="nav__li"><a href="Bodega.html">Bodega</a></li>
-					   <li class="nav__li"><a href="CasaAlex.html">CasaAlex</a></li>
-					   <li class="nav__li"><a href="index.html">Volver a index</a></li>
-				   </ul> 
+<div class="contenedor">
 
-				   <ul class="nav__responsive-ul">                                                  
-						<div class="nav__responsive-buttom-container"></div>                                   
-						<div class="nav__li-container ">  
-							   <li class="nav__responsive-li"><a href="CasaHermanos.hmtl">CasaHermanos</a> </li> 
-							   <li class="nav__responsive-li"><a href="CasaPapa.html">CasaPapa</a></li>
-							   <li class="nav__responsive-li"><a href="Chircal.html">Chircal</a></li>
-							   <li class="nav__responsive-li"><a href="Bodega.html">Bodega</a></li>
-							   <li class="nav__responsive-li"><a href="CasaAlex.html">CasaAlex</a></li>
-							   <li class="nav__responsive-li"><a href="index.html">Volver a index</a></li>
-						</div>
-				   </ul>	
-				</nav>		
+		<header class="movimiento">
+			<nav class="navbar navbar-expand-sm  bg-light ">
+	    	 <div class="container-fluid">
+		        <a class="navbar-brand" href="#"> <img src="assets/img/Bootstrap.ico" class="logo mt-0"> </a>
+		        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+		          <span class="navbar-toggler-icon"></span>
+		        </button>
+	      		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+		      		<ul class="navbar-nav ms-auto me-5"> <!--ms-auto es para que mande el menu a la izquierda me-5 para correr un poco ala izquierda-->
+		      			
+			            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
+			            <li class="nav-item dropdown">
+			              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+			                Locaciones
+			              </a>
+			            	<ul class="dropdown-menu">
+				                <li><a class="dropdown-item" href="CasaHermanos.html"> CasaHermanos</a></li>
+				                <li><a class="dropdown-item" href="CasaPapa.html"> CasaPapa</a></li>
+				                <li><a class="dropdown-item" href="Chircal.html"> Chircal</a></li>
+				                <li><a class="dropdown-item" href="Bodega.html"> Bodega</a></li>
+				                <li><a class="dropdown-item" href="CasaAlex.html"> CasaAlex</a></li>
+			           		</ul>
+			            </li>
+			        </ul>
+	        	</div>
+	   	     </div>
+			</nav>		
 		</header>
 
 		
-
 			<main class="Main">
 
 				<h1 class="h1">Arriendo casa Papa</h1>
@@ -77,7 +85,7 @@
 						<div class="form-img">
 							<div class="img-container">
 								<div>
-									<img src="img/casa.jpeg">	
+									<img src="assets/img/casa.jpeg">	
 								</div>
 							</div>
 						</div>
@@ -93,11 +101,25 @@
 
 			</aside>
 			
-			<footer class="Footer"> 
-				<p class="ColorBlanco">Pagina creada por oscar vanegas todos los derechos reservados 2023</p>
-			</footer>	
+	<footer >
+    	<div class="container-fluid  pt-5 pb-5">
+        	<div class="row text-center ">
+			  <!--Los iconos se traen con <i class="bi bi-facebook"></i>  por ejemplo-->
+			  <div class="col-10 col-sm-4 mb-4"><a href="#" class=" col"><i class="bi bi-facebook"></i> Facebook</a></div>
+			  <div class="col-10 col-sm-4 mb-4"><a href="#" class=" col"><i class="bi bi-whatsapp"></i> Whatsap</a></div>
+			  <div class="col-10 col-sm-4 mb-4"><a href="#" class=" col"><i class="bi bi-github"></i> Github</a></div> 
+			    <div class="col-12"><a href="#" class=" col"> Pagina creada por oscar vanegas todos los derechos reservados 2023</a></div> 
+       		 </div>
+      	</div>
+    </footer>	
 	
-	</div>
+	<!--Link de boostrap javascript -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>		
+	
+</div>
+
+
+
 	
 		
 </body>
