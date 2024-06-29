@@ -1,11 +1,5 @@
 
 main{
     margin-top: 70px;
-    padding: 40px;
-    & h1{
-        text-align: center;
-    }
-    .img{
-        height: 500px;
-    }
+    
 }

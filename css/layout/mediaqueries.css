@@ -7,29 +7,16 @@
         width: 100%;
     }
     main{
-        width: 100%;
-        padding: 40px;
-        & div{
-            & div{
-                .img{
-                    height: 200px;
-                } 
-            }
-        }
-           
+        width: 100%;       
     }
     aside{
         width: 100%;
-        padding: 20px;
     }
     footer{
         width: 100%;
-
     }
-    .contenedor{
-        width: 100%;
-    } 
-}     
+    
+}   
 
 @media screen  and (min-width:700px){
     .contenedor{
@@ -38,7 +25,9 @@
     .movimiento{
         width: 70%;
     }
-}
+}  
+
+
 
 
 

@@ -57,14 +57,13 @@
 
 		
 
-			<main class="Main">
+			<main>
 
 				<h1 class="h1">Arriendo casa hermanos</h1>
 
 				<article>
 					<p> Esta pagina tiene como objetivo guardar, modificar y eliminar informacion de las casas.</p>
 					
-
 				</article>
 
 				<div class="form-img">
@@ -76,26 +75,92 @@
 				</div>
 
 				
+				
+				<div class="container mt-5 ">
 
-				<div class="mb-3">
-  					<label for="exampleFormControlInput1" class="form-label">Nombre del inquilino</label>
-  					<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="nombre">
-				</div>
-				<div class="mb-3">
-  					<label for="exampleFormControlInput1" class="form-label">Cuanto dio</label>
-  					<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="dinero">
+				   <div class="row ">
+						
+					<form class="col-12 col-md-4 ">
+						<h3 class="text-center text-secundary">Registro de personas</h3>
+						<div class="mb-3">
+		  					<label for="exampleFormControlInput1" class="form-label">Nombre del inquilino</label>
+		  					<input type="text" class="form-control"  placeholder="nombre" name="nombre">
+						</div>
+						<div class="mb-3">
+		  					<label for="exampleFormControlInput1" class="form-label">Dinero</label>
+		  					<input type="text" class="form-control" placeholder="dinero" name="dinero">
+						</div>
+						<div class="mb-3">
+		  					<label for="exampleFormControlInput1" class="form-label">Debe</label>
+		  					<input type="text" class="form-control" placeholder="Debe" name="Debe">
+						</div>
+
+						<div class="mb-3">
+		  					<label for="exampleFormControlInput1" class="form-label">Fecha</label>
+		  					<input type="date" class="form-control"  placeholder="fecha" >
+						</div>
+						<div class="mb-3">
+		  					<label for="exampleFormControlTextarea1" class="form-label">Comentario</label>
+		  					<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+						</div>
+
+						<div class="mb-3 form-check">
+		    				<input type="checkbox" class="form-check-input" id="exampleCheck1">
+		    				<label class="form-check-label" for="exampleCheck1">Check me out</label>
+		  				</div>
+
+		  				<button type="submit" class="btn btn-primary" name="btn-guardar" value="ok">Guardar</button>
+		 
+					</form>
+
+					
+					<form class="col-12 col-md-8">
+
+						<table class="table">
+						  <thead class="colorddd">
+						    <tr>
+						      <th scope="col">id</th>
+						      <th scope="col">Nombre</th>
+						      <th scope="col">Dinero</th>
+						      <th scope="col">Debe</th>
+						      <th scope="col">fecha</th>
+						      <th scope="col">Comentario</th>
+						      <th scope="col"></th>
+						    </tr>
+						  </thead>
+						  <tbody>
+						    <tr>
+						      <th scope="row">1</th>
+						      <td >Mark</td>
+						      <td>Otto</td>
+						      <td>@mdo</td>
+						      <td>@mdo</td>
+						      <td>@mdo</td> 
+						      <td> 
+						      	<a href="" class="btn btn-small btn-warning"><i class="bi bi-pencil-square"></i></a> 
+						      	<a href=""class="btn btn-small btn-danger"><i class="bi bi-trash"></i> </a></td>
+						    </tr>
+						    <tr>
+						      <th scope="row">2</th>
+						      <td>Jacob</td>
+						      <td>Thornton</td>
+						      <td>@fat</td>
+						      <td>Otto</td>
+						      <td>Otto</td>
+						    </tr>
+						    <tr>
+						      <th scope="row">3</th>
+						      <td colspan="2">Larry the Bird</td>
+						      <td>@twitter</td>
+						      <td>Otto</td>
+						      <td>Otto</td>
+						    </tr>
+						  </tbody>
+						</table>
+						</form>
+					</div>
 				</div>
 
-				<div class="mb-3">
-  					<label for="exampleFormControlInput1" class="form-label">Fecha</label>
-  					<input type="date" class="form-control" id="exampleFormControlInput1" placeholder="fecha">
-				</div>
-				<div class="mb-3">
-  					<label for="exampleFormControlTextarea1" class="form-label">Comentario</label>
-  					<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-				</div>
-
-				<input class="btn btn-primary" type="submit" value="Enviar">
 
 			</main>
 
