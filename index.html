@@ -32,7 +32,7 @@
 	<header class="movimiento">
 		<nav class="navbar navbar-expand-sm  bg-light ">
     	 <div class="container-fluid">
-	        <a class="navbar-brand" href="#"> <img src="assets/img/Bootstrap.ico" class="logo mt-0"> </a>
+	        <a class="navbar-brand" href="#"> <img src="assets/img/renta.ico" class="logo mt-0"> </a>
 	        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 	          <span class="navbar-toggler-icon"></span>
 	        </button>
@@ -40,6 +40,7 @@
 	      		<ul class="navbar-nav ms-auto me-5"> <!--ms-auto es para que mande el menu a la izquierda me-5 para correr un poco ala izquierda-->
 	      			
 		            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
+		            <li class="nav-item"><a class="nav-link active" aria-current="page" href="crear.html">Crear</a></li>
 		            <li class="nav-item dropdown">
 		              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 		                Locaciones
@@ -47,8 +48,8 @@
 		            	<ul class="dropdown-menu">
 			                <li><a class="dropdown-item" href="CasaHermanos.html"> CasaHermanos</a></li>
 			                <li><a class="dropdown-item" href="CasaPapa.html"> CasaPapa</a></li>
-			                <li><a class="dropdown-item" href="Chircal.html"> Chircal</a></li>
-			                <li><a class="dropdown-item" href="Bodega.html"> Bodega</a></li>
+			                <li><a class="dropdown-item" href="Chircal.html"> Casa Chircal</a></li>
+			                <li><a class="dropdown-item" href="Bodega.html"> Bodega Latas</a></li>
 			                <li><a class="dropdown-item" href="CasaAlex.html"> CasaAlex</a></li>
 		           		</ul>
 		            </li>
@@ -59,12 +60,19 @@
 	</header>
 
 	<main>
-		<h1 >Programa De arriendos</h1>
-			
-			<p>
-				Esta pagina tiene como objetivo guardar, modificar y eliminar informacion de las casas, bodegas y el chircal.
-				Esta pagina es privada por lo que solo la familia vanegas gutierrez la pueden ver y modificar.
+
+		<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<h1 >Programa De arriendos</h1>
+							<p>Esta pagina tiene como objetivo guardar, modificar y eliminar informacion de las casas, bodegas y el chircal.<br>Esta pagina es privada por lo que solo la familia vanegas gutierrez la pueden ver y modificar.
 			</p>
+						</div>
+					</div>
+				</div>
+		
+			
+			
 
 			<!--carrusel--------------------->
 
@@ -75,36 +83,47 @@
 			    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
 			    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
 			    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+			    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+
 			  </div>
 			  <div class="carousel-inner">
 			    <div class="carousel-item active">
-			      <img src="assets/img/casa.jpeg" class="img d-block w-100" alt="...">
+			      <a href="CasaHermanos.html"><img src="assets/img/casahermanos.jpeg" class="img d-block w-100" alt="..."> </a> 
 			      <div class="carousel-caption d-none d-md-block">
 			        <h5>Casa Hermanos</h5>
 			        <p>Casa de alex y oscar.</p>
 			      </div>
 			    </div>
-			    <div class="carousel-item">
-			      <img src="assets/img/cumaral.jpg" class="img d-block w-100" alt="...">
+			    <div class="carousel-item ">
+			      <a href="CasaPapa.html"><img src="assets/img/casaPapa.jpg" class="img d-block w-100" alt="..."> </a> 
 			      <div class="carousel-caption d-none d-md-block">
-			        <p>Casa cumaral</p>
-			        <p>Casa de alex cumaral.</p>
+			        <h5>Casa Papa</h5>
+			        <p>Casa Enrique vanegas.</p>
 			      </div>
 			    </div>
 			    <div class="carousel-item">
-			      <img src="assets/img/bodega-latas.jpg" class="img d-block w-100" alt="...">
+			      <a href="Chircal.html"><img src="assets/img/chircal.jpg" class="img d-block w-100" alt="..."></a> 
+			      <div class="carousel-caption d-none d-md-block">
+			        <h5>Chircal</h5>
+			        <p>Casas del chircal fredy alex y oscar.</p>
+			      </div>
+			    </div>
+			    <div class="carousel-item">
+			    	<a href="Bodega.html"><img src="assets/img/bodega-latas.jpg" class="img d-block w-100" alt="..."></a>  
 			      <div class="carousel-caption d-none d-md-block">
 			        <h5>Bodega de latas</h5>
 			        <p>Bodega de latas de fredy alex y oscar.</p>
 			      </div>
 			    </div>
 			    <div class="carousel-item">
-			      <img src="assets/img/chircal.jpg" class="img d-block w-100" alt="...">
+			      <a href="CasaAlex.html"><img src="assets/img/cumaral.jpg" class="img d-block w-100" alt="..."></a>  
 			      <div class="carousel-caption d-none d-md-block">
-			        <h5>Chircal</h5>
-			        <p>Casas del chircal de fredy alex y oscar.</p>
+			        <p>Casa cumaral</p>
+			        <p>Casa de alex cumaral.</p>
 			      </div>
 			    </div>
+			    
+			    
 			  </div>
 			  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
 			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>

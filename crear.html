@@ -7,20 +7,23 @@
 	<meta name="keywords" content="inicio, pagina, vanegas">
 	<meta name="descriptio" content="esta es una pagina web ser usado para la familia">
 	<meta name="Copyright" content="Vanegas s.a.s.">
+	
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
-	<link rel="stylesheet" type="text/css" href="css/styleCasaAlex.css">
+	<link rel="stylesheet" type="text/css" href="css/Crear.css">
+
 	<!--Link de boostrap -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 	<!--Iconos bootstrap-->
   	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-	<title>Arriendo casa Alex</title>
+
+	<title>Arriendo casa hermanos</title>
 </head>
 
 
 <body>
 
-<div class="contenedor">
-		
+	<div class="contenedor">
+
 		<header class="movimiento">
 			<nav class="navbar navbar-expand-sm  bg-light ">
 	    	 <div class="container-fluid">
@@ -49,50 +52,65 @@
 	   	     </div>
 			</nav>		
 		</header>
+
 		
-
 			<main>
-
 				<div class="container">
 					<div class="row">
 						<div class="col-12">
-							<h1>Arriendo casa Alex</h1>
-							<p>Esta pagina tiene como objetivo guardar, modificar y eliminar informacion de las casas.</p>
+							<h1>Crear usuario</h1>
+							<p>Esta pagina tiene como objetivo Crear usuarios.</p>
 						</div>
 					</div>
 				</div>
+
+				
 					
-					<br><br>
-					<div class="flex-container"> <!--Contenedor tipo flexbox-->
-						<form class="form">	
-							<div class="form__section">
-								<input type="text" class="form__input" placeholder="Nombre inquilino">
-							</div>
-							<div class="form__section">
-								<input type="number" class="form__input" placeholder="Cuanto dinero">
-							</div>
-							<div class="form__section">
-								<input type="date" class="form__input" placeholder="fecha">
-							</div>
-							<div class="form__section">
-								<textarea class="form__input" placeholder="Mensaje"></textarea>
-							</div>
-							<div class="form__section">
-								<input type="submit" class="form__input">
-							</div>
-						</form>	
-						<div class="form-img">
-							<div class="img-container">
-								<div>
-									<img src="assets/img/cumaral.jpg">	
-								</div>
-							</div>
+					
+				
+
+				
+
+				
+				
+				<div class="container mt-5 ">
+
+				   <div class="row ">
+						
+					<form class="col-12 col-md-4 ">
+						<h3 class="text-center text-secundary">Registro de inquilinos</h3>
+						<div class="mb-3">
+		  					<label for="exampleFormControlInput1" class="form-label">Nombre y apellido del inquilino</label>
+		  					<input type="text" class="form-control"  placeholder="nombre" name="nombre">
 						</div>
-					</div>
+						
+						<div class="mb-3">
+		  					<label for="exampleFormControlInput1" class="form-label">Cedula</label>
+		  					<input type="text" class="form-control" placeholder="cedula" name="cedula">
+						</div>
+						<div class="mb-3">
+		  					<label for="exampleFormControlInput1" class="form-label">Numero de celular</label>
+		  					<input type="number" class="form-control" placeholder="Numero de celular" name="celular">
+						</div>
+						<div class="mb-3">
+		  					<label for="exampleFormControlInput1" class="form-label">correo</label>
+		  					<input type="email" class="form-control" placeholder="correo" name="correo">
+						</div>
 
-					<br>
+						<div class="mb-3">
+		  					<label for="exampleFormControlTextarea1" class="form-label">Comentario</label>
+		  					<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+						</div>
 
-				</article>
+						
+
+		  				<button type="submit" class="btn btn-primary" name="btn-guardar" value="ok">Guardar</button>
+		 
+					</form>
+
+					
+
+
 
 			</main>
 
@@ -112,11 +130,9 @@
       	</div>
     </footer>	
 	
+	</div>
+	
 	<!--Link de boostrap javascript -->
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>	
-	
-</div>
-	
-		
 </body>
 </html>
