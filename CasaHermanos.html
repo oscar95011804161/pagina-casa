@@ -33,146 +33,34 @@
 		        </button>
 	      		<div class="collapse navbar-collapse" id="navbarNavDropdown">
 		      		<ul class="navbar-nav ms-auto me-5"> <!--ms-auto es para que mande el menu a la izquierda me-5 para correr un poco ala izquierda-->
-		      			
 			            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
-			            <li class="nav-item dropdown">
-			              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-			                Locaciones
-			              </a>
-			            	<ul class="dropdown-menu">
-				                <li><a class="dropdown-item" href="CasaHermanos.html"> CasaHermanos</a></li>
-				                <li><a class="dropdown-item" href="CasaPapa.html"> CasaPapa</a></li>
-				                <li><a class="dropdown-item" href="Chircal.html"> Chircal</a></li>
-				                <li><a class="dropdown-item" href="Bodega.html"> Bodega</a></li>
-				                <li><a class="dropdown-item" href="CasaAlex.html"> CasaAlex</a></li>
-			           		</ul>
-			            </li>
 			        </ul>
 	        	</div>
 	   	     </div>
 			</nav>		
 		</header>
 
-		
-			<main>
-				<div class="container">
-					<div class="row">
-						<div class="col-12">
-							<h1>Arriendo casa hermanos</h1>
-							<p>Esta pagina tiene como objetivo guardar, modificar y eliminar informacion de las casas.</p>
-						</div>
+		<main>
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h1>Arriendo casa hermanos</h1>
+						<p>Esta pagina tiene como objetivo guardar, modificar y eliminar informacion de las casas.</p>
+
+						<a href="crud/create.html" class="mt-5 btn btn-primary">Registrar información </a>
+						<a href="crud/read.html" class="mt-5 btn btn-primary">leer información </a>
+						<a href="crud/update.html" class="mt-5 btn btn-primary">Actualizar información </a>
+						<a href="crud/delete.html" class="mt-5 btn btn-primary">Eliminar información </a>
+
 					</div>
 				</div>
+			</div>		
+		</main>
 
-				
-					
-					
-				
-
-				<div class="form-img">
-					<div class="img-container">
-						<div>
-							<img src="assets/img/casa.jpeg">	
-						</div>
-					</div>
-				</div>
-
-				
-				
-				<div class="container mt-5 ">
-
-				   <div class="row ">
-						
-					<form class="col-12 col-md-4 ">
-						<h3 class="text-center text-secundary">Registro de pagos</h3>
-						<div class="mb-3">
-		  					<label for="exampleFormControlInput1" class="form-label">Nombre del inquilino</label>
-		  					<input type="text" class="form-control"  placeholder="nombre" name="nombre">
-						</div>
-						<div class="mb-3">
-		  					<label for="exampleFormControlInput1" class="form-label">Dinero</label>
-		  					<input type="text" class="form-control" placeholder="dinero" name="dinero">
-						</div>
-						<div class="mb-3">
-		  					<label for="exampleFormControlInput1" class="form-label">Debe</label>
-		  					<input type="text" class="form-control" placeholder="Debe" name="Debe">
-						</div>
-
-						<div class="mb-3">
-		  					<label for="exampleFormControlInput1" class="form-label">Fecha</label>
-		  					<input type="date" class="form-control"  placeholder="fecha" >
-						</div>
-						<div class="mb-3">
-		  					<label for="exampleFormControlTextarea1" class="form-label">Comentario</label>
-		  					<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-						</div>
-
-						<div class="mb-3 form-check">
-		    				<input type="checkbox" class="form-check-input" id="exampleCheck1">
-		    				<label class="form-check-label" for="exampleCheck1">Check me out</label>
-		  				</div>
-
-		  				<button type="submit" class="btn btn-primary" name="btn-guardar" value="ok">Guardar</button>
-		 
-					</form>
-
-					
-					<form class="col-12 col-md-8">
-
-						<table class="table">
-						  <thead class="">
-						    <tr>
-						      <th scope="col">id</th>
-						      <th scope="col">fecha</th>
-						      <th scope="col">Descripcion</th>
-						      <th scope="col">Ingreso</th>
-						      <th scope="col">Egreso</th>
-						      <th scope="col">Saldo</th>
-						      <th scope="col"></th>
-						    </tr>
-						  </thead>
-						  <tbody>
-						    <tr>
-						      <th scope="row">1</th>
-						      <td >Mark</td>
-						      <td>Otto</td>
-						      <td>@mdo</td>
-						      <td>@mdo</td>
-						      <td>@mdo</td> 
-						      <td> 
-						      	<a href="" class="btn btn-small btn-warning"><i class="bi bi-pencil-square"></i></a> 
-						      	<a href=""class="btn btn-small btn-danger"><i class="bi bi-trash"></i> </a></td>
-						    </tr>
-						    <tr>
-						      <th scope="row">2</th>
-						      <td>Jacob</td>
-						      <td>Thornton</td>
-						      <td>@fat</td>
-						      <td>Otto</td>
-						      <td>Otto</td>
-						    </tr>
-						    <tr>
-						      <th scope="row">3</th>
-						      <td colspan="2">Larry</td>
-						      <td>@twitter</td>
-						      <td>Otto</td>
-						      <td>Otto</td>
-						    </tr>
-						  </tbody>
-						</table>
-						</form>
-					</div>
-				</div>
-
-
-			</main>
-
-			<aside class="Aside">
-
-			</aside>
+			
 			
 	<footer >
-    	<div class="container-fluid  pt-5 pb-5">
+    	<div class="container-fluid mt-5 pt-5 pb-5">
         	<div class="row text-center ">
 			  <!--Los iconos se traen con <i class="bi bi-facebook"></i>  por ejemplo-->
 			  <div class="col-10 col-sm-4 mb-4"><a href="#" class=" col"><i class="bi bi-facebook"></i> Facebook</a></div>
