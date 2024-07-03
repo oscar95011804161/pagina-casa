@@ -2,7 +2,7 @@
 
 //Declaramos variables
 // de los id del documento html
-
+const locacion = document.getElementById ("locacion");
 const nombre = document.getElementById("nombre");
 const celular = document.getElementById("celular");
 const email = document.getElementById("correo");
@@ -19,9 +19,13 @@ form.addEventListener("submit", e=>{
     let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ //creamos variable donde almacene expresion regular para validar email.
     parrafo.innerHTML =""  //para vaciar la memoria cache
     
-
+    if(locacion.value == 0 || locacion.value == "") {
+        warnings+= `el selecciona una locacion para continuar <br>`
+        entrar="true"
+    }
+    
     if (nombre.value.length <6){
-        warnings+= `el nombre no es valido () <br>`
+        warnings+= `el nombre no es valido <br>`
         entrar="true"
     }
     if (celular.value.length <10){
